@@ -14,11 +14,12 @@
 
     fdisk */dev/the_disk_to_be_partitioned*
 
-    ### Example layout
-        MOUNT   PARTITION                   MIN_SIZE
-        /boot   /dev/efi_system_partition   1 GiB
-        [SWAP] 	/dev/swap_partition         4 GiB
-        / 	    /dev/root_partition         23–32 GiB
+### Example layout
+
+    MOUNT   PARTITION                   MIN_SIZE
+    /boot   /dev/efi_system_partition   1 GiB
+    [SWAP] 	/dev/swap_partition         4 GiB
+    / 	    /dev/root_partition         23–32 GiB
 
 ## Format the partitions
 
@@ -56,17 +57,12 @@
 ## Localization
 
     locale-gen
-
-    /etc/locale.conf
-        LANG=en_US.UTF-8
-
-    /etc/vconsole.conf
-        KEYMAP=de-latin1
-
+    echo "LANG=en_US.UTF-8" > /etc/locale.conf
+    echo "KEYMAP=pl" > /etc/vconsole.conf
+        
 ## Network configuration
 
-    /etc/hostname
-        arch
+    echo "arch" > /etc/hostname
 
 ## Initramfs
 
