@@ -19,7 +19,7 @@
     MOUNT   PARTITION                   MIN_SIZE
     /boot   /dev/efi_system_partition   1 GiB
     [SWAP] 	/dev/swap_partition         4 GiB
-    / 	    /dev/root_partition         23–32 GiB
+    / 	/dev/root_partition         23–32 GiB
 
 ## Format the partitions
 
