@@ -79,6 +79,10 @@
 
     passwd
 
+## TLP
+
+    systemctl enable tlp
+
 ## Add user
 
     useradd -m user
